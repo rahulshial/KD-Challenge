@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class=feed-container>
+      <a class="image-container" href="https://www.konstructdigital.com/marketing-strategy/microcopy-tips/">
+        <img width="1230" height="615" src="https://www.konstructdigital.com/wp-content/uploads/2021/03/blog-post-microcopy-banner.png" class="kd-blog-post__image wp-post-image" alt="man looking at computer with a microscope" loading="lazy" srcset="https://www.konstructdigital.com/wp-content/uploads/2021/03/blog-post-microcopy-banner.png 1230w, https://www.konstructdigital.com/wp-content/uploads/2021/03/blog-post-microcopy-banner-300x150.png 300w, https://www.konstructdigital.com/wp-content/uploads/2021/03/blog-post-microcopy-banner-1024x512.png 1024w, https://www.konstructdigital.com/wp-content/uploads/2021/03/blog-post-microcopy-banner-768x384.png 768w" sizes="(max-width: 1230px) 100vw, 1230px">
+      </a>
+      <div class='feed-item-text-container'>
+        <p class='feed-date'>
+          <time class=feed-published'>
+            <?php $pubDate ?>
+          </time>
+        </p>
+        <h3>
+          <a class='feed-link' href=<?php $permalink ?> title="<?php $titleDate ?>">
+            <?php $title ?>
+          </a>
+        </h3>
+        <p class='feed-metaData'>
+          <span class='feed-category'>
+            <?php echo "Category: " . $category; ?>
+          </span>
+          <span class='feed-author'>
+            <?php echo "Author: " . $author; ?>
+          </span>
+        </p>
+      </div>
+    </div>  
+
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<div class='feed-title'>
+  <a  href="<?php echo $item->get_permalink(); ?>"
+      title="<?php echo $item->get_date('F j, Y @ g:i a'); ?>">
+      <?php echo $item->get_title(); ?>
+  </a>
